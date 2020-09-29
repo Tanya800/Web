@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<mail 
+xmlns="http://www.myhp.edu"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.myhp.edu mail.xsd">
+<to>user1@domain.ru</to>
+<from>user2@domain.ru </from>
+<subject>Встреча</subject>
+<body>Позвони мне завтра утром</body>
+</mail>

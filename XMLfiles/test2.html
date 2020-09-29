@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<script type="text/javascript" src="loadxmldoc.js"> 
+</script>
+</head>
+<body>
+<script type="text/javascript">
+/*var xmlDoc = document.implementation.createDocument("", "test", null);
+
+function documentLoaded (e) {
+  alert(new XMLSerializer().serializeToString(e.target)); // Gives querydata.xml contents as string
+}
+
+xmlDoc.addEventListener("load", documentLoaded, false);
+xmlDoc.load('querydata.xml');*/
+xmlDoc = loadXMLDoc("timetable.xml");
+x=xmlDoc.getElementsByTagName("subject")[0].childNodes[0];
+x.nodeValue="Java programming";
+
+x = xmlDoc.getElementsByTagName("subject");
+for (i=0; i<x.length; i++)
+{ 
+document.write(x[i].childNodes[0].nodeValue);
+document.write("<br />");
+}
+
+</script>
+</body>
+</html>
